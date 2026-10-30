@@ -1,0 +1,95 @@
+/* v11: hub kartu Latihan/Materi + jalur belajar di beranda */
+#kzlink{display:none!important}
+#latihan.lt-hub>*:not(.subhead):not(#lthub){display:none!important}
+#latihan.lt-quiz #lthub,#latihan.lt-quiz #qpills{display:none!important}
+#latihan.lt-hub #ltlabel{display:none}
+.ltlabel{display:inline-block;margin:2px 0 8px;padding:6px 14px;border-radius:999px;background:#2a1016;border:1px solid #e0182d;color:#ff9aa3;font-weight:800;font-size:16px}
+#materi.mt-hub>*:not(.subhead):not(#mthub){display:none!important}
+#materi.mt-bab #mthub,#materi.mt-bab .sensei{display:none!important}
+#lthub,#mthub{display:flex;flex-direction:column;gap:10px;padding-bottom:12px}
+.hubnote{margin:0;color:var(--muted,#9a9aaa);font-size:16px}
+.hubh{margin:8px 0 0;font-size:18px;color:#fff;letter-spacing:.2px}
+.hubstep{background:#1b0d12;border:1px dashed #e0182d;border-radius:14px;padding:10px 14px}
+.hubstep b{color:#fff;font-size:17px}.hubstep p{margin:4px 0 0;color:#c9c9d6;font-size:15px}
+.hubstep span{color:#ff9aa3;font-weight:800;white-space:nowrap}
+.hc{display:flex;align-items:center;gap:12px;width:100%;box-sizing:border-box;background:var(--panel,#15151c);border:1px solid var(--line,#2e2e3a);border-left:3px solid #e0182d;border-radius:16px;padding:14px;color:#fff;text-align:left;cursor:pointer;font:inherit}
+.hc:active{transform:scale(.98);border-color:#e0182d}
+.hc h4{margin:0;font-size:20px;color:#fff}.hc small{display:block;color:#aeb0c0;font-size:14px;margin-top:2px;font-weight:500}
+.hc.big>b{font-size:34px;min-width:52px;text-align:center;color:#ff5a66}
+.hc.ghost{background:transparent;border-style:dashed}.hc.ghost span{font-size:26px}
+.hrow3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.hrow3.two{grid-template-columns:repeat(2,1fr)}
+.hrow3 .hc{flex-direction:column;text-align:center;gap:2px;padding:12px 4px;justify-content:center}
+.hrow3 .hc span{font-size:28px;line-height:1.2}.hrow3 .hc b{font-size:18px}
+.hgroup{background:var(--panel,#15151c);border:1px solid var(--line,#2e2e3a);border-left:3px solid #e0182d;border-radius:16px;padding:12px}
+.hgroup>h4{margin:0 0 8px;font-size:20px;color:#fff}.hgroup>h4 small{font-size:14px;color:#aeb0c0;font-weight:500;margin-left:6px}
+.hgroup .hrow3 button{background:#1d1d27;border:1px solid #34343f;border-radius:12px;color:#fff;padding:12px 4px;font:inherit;display:flex;flex-direction:column;gap:2px;align-items:center;cursor:pointer}
+.hgroup .hrow3 button:active{border-color:#e0182d;background:#2a1016}
+.hgroup .hrow3 b{font-size:17px}.hgroup .hrow3 small{font-size:13px;color:#aeb0c0}
+/* beranda: jalur belajar */
+.path{display:flex;flex-direction:column;gap:10px}
+.path button{display:flex;align-items:center;gap:14px;background:var(--panel,#15151c);border:1px solid var(--line,#2e2e3a);border-left:3px solid #e0182d;border-radius:16px;padding:14px;color:#fff;text-align:left;cursor:pointer;font:inherit}
+.path button:active{transform:scale(.98)}
+.path i{font-style:normal;width:38px;height:38px;border-radius:50%;background:#e0182d;display:grid;place-items:center;font-weight:900;font-size:20px;flex:none}
+.path div{flex:1}.path b{display:block;font-size:20px}.path small{display:block;color:#aeb0c0;font-size:14px;margin-top:2px}
+.path u{text-decoration:none;font-size:28px;color:#ff5a66}
+/* beranda ringkas: jalur belajar terlihat tanpa scroll */
+#home .bchero .kan,#home .bchero .wm,#home .bchero .sw,#home .bchero .kick,#home .bchero h2,#home .bchero p,#home .slash{display:none!important}
+#home .bchero{padding:10px 12px!important;min-height:0!important;margin-bottom:6px!important}
+#home .dqr{padding:6px 0!important}#home .dqr .tx{font-size:15px!important}
+#home .sec{margin:8px 0 6px!important}
+#home .path{gap:8px}#home .path button{padding:10px 14px}#home .path i{width:34px;height:34px;font-size:18px}#home .path b{font-size:18px}
+@media (max-height:700px){#home .dq{display:none}#home .sec:first-of-type{display:none}}
+@media (max-height:800px){#home .dqr .pb{display:none}#home .dqr{padding:4px 0!important}#home .dqr .tx{font-size:14px!important}#home .bchero{padding:8px 12px!important}#home .hud{padding:6px 10px!important}#home .path button{padding:8px 14px}}
+@media (max-height:740px){#home .path small{display:none}#home .path button{padding:7px 14px}}
+@media (max-height:800px){#home .sec{margin:4px 0 3px!important}#home .sec h3{font-size:16px!important}#home .dq{padding:2px 12px!important}#home .bchero{margin-bottom:2px!important}#home .path{gap:6px}#home .hud .lvl{padding:6px 10px}}
+@media (max-height:740px){#home .dq{padding:0 12px!important}#home .dqr{padding:2px 0!important}#home .path button{padding:5px 12px}#home .path i{width:30px;height:30px;font-size:16px}}
+/* hub materi lebih ringkas */
+#mthub{gap:6px}#mthub .hubh{margin:2px 0 0;font-size:17px}
+#mthub .hubstep{padding:8px 12px}#mthub .hubstep p{font-size:14px}
+#mthub .hc.big{padding:8px 14px}#mthub .hc.big>b{font-size:30px}
+#mthub .hrow3 .hc{padding:8px 4px}#mthub .hrow3 .hc span{font-size:24px}#mthub .hrow3 .hc b{font-size:16px}#mthub .hrow3 .hc small{font-size:12px}
+@media (max-height:740px){#mthub .hubstep p{display:none}#mthub .hrow3 .hc small{display:none}}
+/* hub latihan lebih ringkas */
+#lthub{gap:6px}#lthub .hubnote{display:none}
+#lthub .hc.big{padding:8px 14px}#lthub .hc.big>b{font-size:30px}
+#lthub .hgroup{padding:8px 10px}#lthub .hgroup>h4{margin-bottom:6px;font-size:18px}#lthub .hgroup .hrow3 button{padding:8px 2px}
+#lthub .hrow3>.hc{padding:8px 4px}#lthub .hrow3>.hc span{font-size:24px}#lthub .hrow3>.hc b{font-size:16px}
+#lthub .hc.ghost{padding:8px 14px}#lthub .hc.ghost span{font-size:22px}#lthub .hc.ghost h4{font-size:17px}
+@media (max-height:740px){#lthub .hc small,#lthub .hgroup>h4 small{display:none}#lthub .hgroup .hrow3 small{display:block}#lthub .hrow3>.hc span{font-size:20px}#lthub .hc.big>b{font-size:26px}#lthub .hc.big{padding:6px 14px}#lthub .hgroup .hrow3 button{padding:6px 2px}}
+
+/* rentang bab */
+.rng{display:flex;align-items:center;gap:8px;margin:8px 0;color:#c9c9d6;font-size:16px;flex-wrap:wrap}
+.rng select{background:#15151c;color:#fff;border:1px solid #e0182d;border-radius:10px;padding:8px 10px;font-size:17px;min-width:76px}
+.rng select:disabled{opacity:.45;border-color:#34343f}
+#rlat{margin:2px 0 10px}#rlat:disabled{opacity:.4}
+.mixb{margin-top:8px;width:100%;background:transparent;border:1px dashed #e0182d;border-radius:12px;color:#ff9aa3;padding:9px;font:inherit;font-weight:700;cursor:pointer}
+.ltmsg{margin:6px 0 0;color:#ffb347;font-size:14px}.ltmsg:empty{display:none}
+#lthub .rng{margin:0 0 8px}
+#wordpills{flex-wrap:wrap!important;overflow:visible!important;gap:6px!important}
+#kotoba .hero-mini,#kotoba .word .glyph{display:none!important}
+#kotoba .word h4{font-size:26px!important;line-height:1.3}
+.hgroup button.empty,.mixb.empty{opacity:.4}
+#kotoba>button.btn:not(#rlat){display:none!important}
+#wordpills .pill{padding:6px 10px!important;font-size:14px!important}
+
+/* v13: cegah zoom ketuk-dua-kali (pinch dua jari tetap bisa), panel jalur & flashcard */
+*,*::before,*::after{touch-action:manipulation}
+#flashcard>.pills{display:none!important}
+#fdpanel .pills{margin:2px 0!important}#fdpanel .rng{margin:4px 0}
+.fdbar{display:flex;justify-content:space-between;align-items:center;margin:4px 0 6px;color:#c9c9d6;font-size:15px}
+.jpanel{background:var(--panel,#15151c);border:1px solid var(--line,#2e2e3a);border-left:3px solid #e0182d;border-radius:16px;padding:12px;margin:10px 0}
+.jpanel h4{margin:0 0 6px;font-size:19px;color:#fff}.jpanel .muted{font-size:15px;margin:0 0 8px}
+.jnum{width:70px;background:#1d1d27;color:#fff;border:1px solid #e0182d;border-radius:10px;padding:6px 8px;font-size:17px}
+.jtoday{margin-top:8px}.jtoday>b{color:#ff9aa3;font-size:16px}
+.jgrid.mini{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.jgrid.mini .jch{pointer-events:none;min-width:48px}
+.bigopt{font-size:38px!important;text-align:center;font-family:var(--jp,inherit)}
+#kjrq .jqz .qk{font-size:84px;text-align:center;line-height:1.2;font-family:var(--jp,inherit);color:#fff}
+#fdpanel .pills{flex-wrap:wrap!important;overflow:visible!important}
+#fdpanel .pill{padding:6px 12px!important;font-size:15px!important}
+
+#flashcard .flash{min-height:230px!important;padding:14px!important}
+#flashcard .flash .hint{font-size:14px}
+#fdpanel .fdbar{margin:0 0 6px}
+@media (max-height:700px){#flashcard .flash{min-height:170px!important;padding:8px!important}#flashcard .flash .kanji{font-size:56px!important}#flashcard .actions .btn{padding:10px!important}#flashcard .subhead{margin-bottom:2px!important}}
+#fdpanel .fdbar>span:first-child{font-size:14px;line-height:1.25}#fdpanel .fdbar>span:last-child{white-space:nowrap}

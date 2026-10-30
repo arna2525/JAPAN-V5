@@ -1,0 +1,32 @@
+/* Urutan goresan, detail kanji, radikal (v12). Kanji dibuat besar agar mudah dibedakan. */
+:root{--kfont:'Noto Sans JP','Hiragino Kaku Gothic ProN','Yu Gothic','Meiryo','Noto Sans CJK JP',system-ui,sans-serif}
+.stwrap{display:flex;flex-direction:column;align-items:center;gap:8px;margin:6px 0 12px}
+.stbox{width:min(78vw,300px);aspect-ratio:1;background:#fff;border-radius:22px;border:2px solid #e8cfd2;box-shadow:0 8px 22px rgba(0,0,0,.18);padding:6px}
+.stsvg{width:100%;height:100%;display:block}
+.sgd{stroke:#ecd9db;stroke-width:.8;stroke-dasharray:3 3}
+.stghost path{fill:none;stroke:#e4e4ea;stroke-width:4.2;stroke-linecap:round;stroke-linejoin:round}
+.stink path{fill:none;stroke:#23232b;stroke-width:4.2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.stink path.cur{stroke:#d62839}
+.stnums{display:none}.stnums.on{display:block}.stnums text{font-size:7px;fill:#d62839;font-weight:700;font-family:system-ui,sans-serif}
+.stlbl{font-weight:800;color:#b3202f}
+.stctl{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}.stctl .btn{padding:10px 16px}
+.stchk{font-size:14px;color:inherit;opacity:.9}
+.kdhero{display:flex;gap:14px;align-items:center;margin:8px 4px}.kdbig{font-family:var(--kfont);font-size:104px;line-height:1.05;font-weight:500}
+.kdhero h3{margin:0 0 6px;font-size:22px}.kdread{font-size:17px}
+.kdinfo{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.kdinfo>div{background:rgba(127,127,127,.12);border-radius:14px;padding:10px}.kdinfo small{display:block;opacity:.7;font-size:12px}.kdinfo b{font-size:18px;font-family:var(--kfont)}
+.kdcomp{display:flex;gap:8px;flex-wrap:wrap}.kdc{border:1px solid rgba(127,127,127,.35);background:rgba(127,127,127,.1);border-radius:14px;padding:6px 12px;display:flex;flex-direction:column;align-items:center;min-width:64px;color:inherit;cursor:pointer}.kdc b{font-size:34px;font-weight:500;font-family:var(--kfont);line-height:1.1}.kdc small{font-size:11px;opacity:.75}
+.radgrp{margin:10px 0}.radh{margin:4px 6px;font-size:15px}.radh span{display:inline-block;min-width:28px;text-align:center;background:#a12118;color:#fff;border-radius:8px;padding:2px 6px;margin-right:6px}
+.radgrid,.radk{display:grid;grid-template-columns:repeat(auto-fill,minmax(82px,1fr));gap:8px;padding:0 4px}
+.radt,.radkb{position:relative;border:1.5px solid #e2b9bd;background:#fff;color:#8a1b13;border-radius:16px;padding:8px 4px;display:flex;flex-direction:column;align-items:center;cursor:pointer;min-height:92px}
+.radt b,.radkb b{font-family:var(--kfont);font-size:44px;font-weight:500;line-height:1.1}.radt small,.radkb small{font-size:11px;text-align:center;line-height:1.15;color:#5b4a4c;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.radt i{position:absolute;right:6px;top:3px;font-size:10px;font-style:normal;color:#a12118;opacity:.8}
+.lvb{display:inline-block;font-size:10px;font-weight:800;padding:1px 7px;border-radius:99px;background:#a12118;color:#fff}.radkb .lvb{position:absolute;right:5px;top:4px}
+.lv-N4{background:#c0602f}.lv-N3{background:#6a5acd}.lv-N3p{background:#555}
+/* kanji lebih besar di daftar & kartu */
+.kk1{font-size:52px!important;line-height:1.05!important;font-weight:500;font-family:var(--kfont)}
+.kk{font-size:120px!important;font-family:var(--kfont)}
+.bigk{font-size:130px!important;font-family:var(--kfont)}
+.jk{font-size:36px!important;font-family:var(--kfont)}.kz-big.kj{font-size:88px!important;font-family:var(--kfont)}.qk{font-size:96px!important;font-family:var(--kfont)}
+.jlstroke{margin:8px 0}
+
+.csbab{margin:18px 4px 6px;padding:6px 12px;border-left:4px solid #d62839;background:rgba(214,40,57,.12);border-radius:8px;font-size:15px}
